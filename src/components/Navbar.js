@@ -1,21 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Squash as Hamburger } from 'hamburger-react'
 
-function Navbar() {
-	const [click, setClick] = useState(false);
-	
-	const handleClick = () => setClick(!click);
-	const closeMobileMenu = () => setClick(false);
-
-
+function Navbar({handleClick, click}) {
 	return (
 		<>
         <nav className="navbar">
             <div className="navbar-container">
-                <a href="#hero" className="navbar-logo" onClick={ closeMobileMenu }>
+                <a href="#hero" className="navbar-logo">
 					JAN STASZAK
 				</a>
-                <div className="menu-icon" onClick={ handleClick }>
+                <div className="menu-icon" onClick={() => handleClick(click)}>
                     <Hamburger />
                 </div>
 			</div>

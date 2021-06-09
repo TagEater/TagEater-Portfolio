@@ -1,7 +1,14 @@
 @import './components/navbar';
+@import './components/MainContent';
+@import './components/HeroSection';
+@import './components/mediaueries';
 
 body {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+.nav-menu:has(.active) ~ .main-container {
+	margin-left: 300px;
 }

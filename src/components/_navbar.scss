@@ -3,6 +3,8 @@
 	flex-direction: row-reverse;
 	font-family: 'Roboto', sans-serif;
 	font-weight: bold;
+	max-height: 80px;
+	background: #fff;
 	
 	&-container {
 		display: flex;
@@ -12,7 +14,7 @@
 		padding: 15px 5%;
 		border-bottom: 1px solid #e4e4e4;
 		box-sizing: border-box;
-		z-index: 1;
+		z-index: 2;
 	}
 
 	&-logo {
@@ -32,11 +34,16 @@
 		height: 100vh;
 		list-style-type: none;
 		margin: 0;
-		margin-left: -300px;
+		margin-left: -260px;
 		padding: 0 40px;
 		border-right: 1px solid #e4e4e4;
 		transition: 1s all;
+
+		&.active {
+			margin-left: 0;
+			animation: showMenu 1s;
 		}
+	}
 
 	&-item {
 		padding: 15px 0;
@@ -53,11 +60,6 @@
 			transform: translate(15px, 10px);
 		}
 	}
-}
-
-.active {
-	margin-left: 0;
-	animation: showMenu 1s;
 }
 
 @keyframes showMenu {

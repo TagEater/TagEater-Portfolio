@@ -1,5 +1,4 @@
 import React from 'react'
-import './_HeroSection.scss'
 
 function HeroSection() {
 	return (

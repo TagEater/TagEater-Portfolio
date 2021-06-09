@@ -1,0 +1,34 @@
+@import "./navbar";
+
+@media screen and (max-width: 425px) {
+  .navbar {
+    flex-direction: column;
+    position: fixed;
+    width: 100%;
+  }
+
+  .nav {
+    &-menu {
+      position: fixed;
+      width: 100%;
+      max-width: 0;
+      z-index: 1;
+      background: #fff;
+      padding: 0;
+
+      &.active {
+        max-width: 100%;
+        margin-left: 0;
+      }
+    }
+
+    &-item {
+      text-align: center;
+      padding: 8% 0;
+    }
+  }
+
+  .main-container {
+    padding-top: 79px;
+  }
+}
