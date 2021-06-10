@@ -18,6 +18,7 @@ function Navbar({handleClick, click}) {
 					HOME
 				</li>
 				<li className="nav-item">ABOUT</li>
+				<li className="nav-item">STACK</li>
 				<li className="nav-item">PROJECTS</li>
 				<li className="nav-item">CONTACT</li>
 			</ul>
